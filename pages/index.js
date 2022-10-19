@@ -1,15 +1,18 @@
-import Head from 'next/head'
-
-
+import Head from "next/head";
+import UtilStyles from "../styles/utils.module.css";
 
 export default function Home() {
   return (
-    <div >
+    <div>
       <Head>
         <title>A blog by:</title>
-        <link rel="icon" href="/favicon.ico"/>
+        <link rel="icon" href="/favicon.ico" />
       </Head>
-    <main>Posts</main>
+      <main>
+        <section className={`${UtilStyles.headingMd} ${UtilStyles.padding1px}`}>
+        Posts
+        </section>
+      </main>
     </div>
-  )
+  );
 }
